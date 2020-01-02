@@ -1,0 +1,21 @@
+{
+
+  "manifest_version": 2,
+  "name": "News Corpse",
+  "version": "1.0",
+
+  "description": "Block websites owned by NewsCorp.",
+
+  "icons": {
+    "48": "icons/icon_48.png",
+    "96": "icons/icon_96.png"
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["*://*.punters.com.au/*"],
+      "js": ["block_nc.js"]
+    }
+  ]
+
+}
